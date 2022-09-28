@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stepper</title>
+</head>
+<body>
+    <div class="grid-container">
+
+        <header>
+            <!-- 11 divs, 4 circs (2 empty), 4 text, 3 dividers (1 solid 2 dotted) -->
+            <div class="step-num greenish">1</div>
+            <div class="txt-1">Cabin</div>
+            <div class="process-1 greenish"></div>
+            
+            <div class="step-num bluish">2</div>
+            <div class="txt-2">Meals</div>
+            <div class="process-2"></div>
+
+            <div class="step-num bluish-inv">3</div>
+            <div>Upgrades</div>
+            <div class="process-2"></div>
+
+            <div class="step-num bluish-inv">4</div>
+            <div>Payment</div>
+            
+        </header>
+        
+        <summary>
+            <h1>Meal Preferences</h1>
+            <p>Your flight comes with breakfast, lunch, and dinner. Please make you selections below. <br>
+                Changes to your order can be  made up to 48 hours before your flight. <p/>
+        </summary>
+            
+        <main>
+            <form class="meals">
+                
+                <label for="breakfast">Breakfast</label>
+                <select name="breakfast" id="breakfast">
+                    <option value="egg">Sausage Egg Scramble Bowl</option>
+                    <option value="sandwich">Club Sandwich Meal</option>
+                    <option value="beef">Wagyu Beef Sliders Meal</option>
+                </select> 
+                <br>
+                <label for="lunch">Lunch</label>
+                <select name="lunch" id="lunch">
+                    <option value="sandwich">Club Sandwich Meal</option>
+                    <option value="egg">Sausage Egg Scramble Bowl</option>
+                    <option value="beef">Wagyu Beef Sliders Meal</option>
+                </select>
+                <br>
+                <label for="dinner">Dinner</label>
+                <select name="dinner" id="dinner">
+                    <option value="beef">Wagyu Beef Sliders Meal</option>
+                    <option value="egg">Sausage Egg Scramble Bowl</option>
+                    <option value="sandwich">Club Sandwich Meal</option>
+                </select>
+                
+            </form>
+        </main>
+            
+        <aside>
+            <form class="drinks">
+                
+                <label for="drinks">Drink</label>
+                <select name="drinks" id="drinks">
+                    <option value="coffee">Coffee</option>
+                    <option value="cranberryJuice">Cranberry Juice</option>
+                    <option value="redWine">Red Wine</option>
+                </select> 
+                <br>
+                <label for="drinks">Drink</label>
+                <select name="drinks" id="drinks">
+                    <option value="cranberryJuice">Cranberry Juice</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="redWine">Red Wine</option>
+                </select>
+                <br>
+                <label for="drinks">Drink</label>
+                <select name="drinks" id="drinks">
+                    <option value="redWine">Red Wine</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="cranberryJuice">Cranberry Juice</option>
+                </select>
+                
+            </form>
+        </aside>
+            
+        <footer>
+            <form>
+                <input type="checkbox" name="wantsDessert" id="wantsDessert">
+                <label for="wantsDessert">I'd like dessert, too!</label>
+            </form>
+            <div class="buttons">
+                <button class="back-btn">Back</button>
+                <button class="continue-btn bluish">Continue</button>
+            </div>
+        </footer>
+            
+    </div>
+</body>
+</html>
